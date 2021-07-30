@@ -1,0 +1,29 @@
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title> Profile </title> 
+		<p align="center" style = "background: beige;"><a href=login ><button class="btn" style = "height: 35px; width: 95px; font-size: x-large; background-color: coral;">Logout</button></a></p>
+    </head> 
+    <body style = "background: beige;"></br></br> 
+        <div align="center" style = "background: beige;"> 
+          <div align="center" class="border" style = "background: beige;"> 
+             <div class="header"> 
+                <h1 class="word">User Profile</h1> 
+             </div></br>
+            <h2 class="word"> 
+                <form action="{{ url_for('profile')}}" > 
+                    <p>Welcome {{ result.firstname }}!!</br>
+					your details are as below:</br></br>
+					User Name: {{ result.username }}</br></br>
+					First Name: {{ result.firstname }}</br></br>
+					Last Name: {{ result.lastname }}</br></br>
+					Email: {{ result.email }}</br></br>
+					Uploaded file word count: {{wordcount}}
+					</p>
+                </form> 
+				<a href="/downloadfiles/{{result.savedfilename}}" target="blank"><button class='btn btn-default' style = "height: 35px; width: 325px; font-size: x-large; background-color: coral;">Download the uploaded file</button></a>
+            </h2> 
+          </div> 
+        </div> 
+    </body> 
+</html>

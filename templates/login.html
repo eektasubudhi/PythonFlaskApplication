@@ -1,0 +1,25 @@
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title> Login </title> 
+    </head> 
+    <body></br></br></br></br></br> 
+        <div align="center"> 
+          <div align="center" class="border" style = "background: beige;"> 
+             <div class="header"> 
+                <h1 class="word">Login</h1> 
+             </div></br></br></br> 
+            <h2 class="word" > 
+                <form action="{{ url_for('profile') }}" method="post" style = "background: beige;"> 
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox" required/></br></br> 
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox" required/></br></br>
+					
+                    <input type="submit" class="btn" value="Submit" style = "height: 30px; width: 95px; font-size: x-large; background-color: coral;"></br></br> </br></br>
+					{{messgae}}
+                </form>
+				<p align="center" style = "background: beige; font-size: smaller;">New user: <a href=/ ><button class="btn" style = "height: 35px; width: 95px; font-size: large; background-color: coral;">Register</button></a></p>
+            </h2> 
+          </div> 
+        </div> 
+    </body> 
+</html>

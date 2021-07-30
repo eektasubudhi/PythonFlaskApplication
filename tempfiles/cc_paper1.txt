@@ -1,0 +1,44 @@
+1. Explain the general concept in your own words (Word Limit : 50)
+
+1Ans. MapReduce is a programming model that can process a large amount of data parallelly on thousands of machines in a distributed manner. The model can efficiently deal with machine failures, inter-machine communications, and program executions. This kind of system is mostly used on large clusters of machines.
+================= OR
+MapReduce is a programming model that can process a large amount of data parallelly on thousands of machines in a distributed manner. The model can efficiently deal with machine failures, inter-machine communications, and program executions. This model has mainly two phases. Those are Map and Reduce phase.
+
+2. Difference between Map and Reduce? (Word limit: 50)
+
+2Ans. Map function takes input from the disk, splits it into smaller blocks, and then Map the data as an intermediate key-value pair.
+Reduce function takes the intermediate key-value pair generated from Map function. It shuffles, sorts, and reduces the data by aggregating the same key and its values. 
+
+3. How fault tolerance is handled? (Word limit: 50)
+
+3Ans. Master pings workers periodically. It marks a worker as failed if no response is received for a specific time.
+Completed map task needs re-execution on another worker as output is saved on failed worker's local disk. Completed reduce task is saved in a global file so re-execution not needed.
+--------------------
+Master pings workers periodically. If the master donot get any response from a worker for a specific amount of time, the worker is marked as failed. Completed map task is re-executed on another worker as output is saved on failed worker's local disk, while completed reduce task is saved in a global file so re-execution not needed.
+
+4. What is the purpose of the combiner? (Word limit: 50)
+
+4Ans. The combiner and reducer mostly use similar code. Combiner helps to expedite the reducer function by simplifying the data and reducing it on each mapper before sending it over to the reducer. The output from the combiner is stored in an intermediate file that is the input for the reducer.
+=============== or 
+The combiner and reducer mostly use similar code. Combiner helps to expedite the reducer function by summarizing the map output records with the same key before sending it over. The output from the combiner is stored in an intermediate file that will be sent to the reducer.
+
+5. Advantages and disadvantages - 2 each (word limit: 50)
+
+5Ans. 
+Advantages- 
+Model is easy to use even without experience in parallel and distributed systems and has a very good fault-tolerant.
+It can process a large amount of unstructured data in less time.
+Disadvantages - 
+It uses network bandwidth(a scarce resource) to process a lot of data.
+Output processing time is slow.
+
+
+
+-------------
+
+
+
+
+The combiner and reducer mostly use similar code. Combiner helps to expedite the reducer function by simplifying the data and reducing it on each mapper before sending it over . The output from combiner is stored in an intermediate file that will be sent to the reducer.
+
+The combiner and reducer mostly use similar code. Combiner helps to expedite the reducer function by summarizing the map output records with the same key before sending it over. The output from combiner is stored in an intermediate file that will be sent to the reducer.

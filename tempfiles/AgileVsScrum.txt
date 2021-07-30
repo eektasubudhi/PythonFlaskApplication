@@ -1,0 +1,55 @@
+Defining Agile Software development - 
+This methodology refers to an iterative approach for the project life cycle. In agile project management, requirements are broken into smaller pieces and then prioritized as per importance.
+Manifesto for Agile Software Development states that this process focuses on customer collaboration and responding to change if required in every step of project delivery. Proper feedback helps built quality software and leads to customer satisfaction.
+Scrum methodologies facilitate the agile development process. The scrum model promotes adaptive solutions for complex problems and control risks. The attributes for building a successful scrum model are - Sprint, adaption, inspection, and transparency. The scrum team includes -
+One scrum master - The one who is responsible for the team to adhere to scrum guidelines. Scrum Masters are the leader who supports the team in their needs. They facilitate the team to complete their assigned task by eliminating obstacles.
+One Product owner - The one who is accountable for requirement gathering from stakeholders and product backlog management. Product owners set the priority of each backlog item and assign it to developers. They review the work after each sprint and match that to acceptance criteria set for the task as per the requirement to mark it as done.
+Developers - All individuals responsible for delivering the sprint. It includes developers, testers, architects, designers, DBAs, etc.
+Scrum Events - These are the events held in each sprint to enable the transparency required and adapt scrum artifacts.
+The Sprint - A sprint is an iteration that happens periodically to complete a set of work defined on the sprint planning. The process includes: 
+Sprint planning- This is the planning meeting held by the scrum team and stakeholders at the beginning of a sprint to define product backlog and each developer responsibility and set the acceptance criteria,
+Daily scrum- This meeting facilitates the workflow by discussing the progress and hurdles,
+Sprint review- This meeting is held to review the accomplishment and improvement needs in the product backlog,
+Sprint retrospective- This meeting concludes the sprint with individual and team feedback towards increasing quality and effectiveness.
+Scrum Artifacts - This measures the progress of work over a sprint. It helps to build transparency in the process by defining the goals and requirements for a specific sprint. It includes -
+1. Product backlog: This defines the work to be done in a specific sprint. It is an ordered list of work as per priority.
+2. Sprint Backlog: This defines the goals of the sprint. This the plan for the developers to complete and track the increment.
+
+Advantages and disadvantages using the Agile model -
+Advantages: 
+1. Value individuals and interactions. And also values customer collaborations.
+2. Flexible and can accommodate changes as per feedback resulting in increased quality of software.
+3. cost-effective.
+Disadvantages:
+1. No clear end time of a project.
+2. Developers can get idle if the task assigned gets completed before sprint completion and have to wait till the next sprint.
+
+Defining Waterfall Software Development - 
+This model follows linear sequential flow for the software development lifecycle. The predefined phases of the waterfall model don't overlap with each other which means the output of one phase is input for the next. This is the first model introduced for SDLC. The phases of the waterfall model are as below.
+Requirement Analysis - This is the first step of this model where requirements from the client are gathered and documented. Then the gathered requirement data are analyzed as per feasibility. 
+System Design - In this phase software and hardware design architecture is prepared as per the requirement gathered in the previous phase. Decisions are taken in terms of the technology stack to be used for the project development. Design documents are converted into the structure for implementation.
+Implementation - This takes the design document prepared in the previous phase as its input. In this phase, small units of software are built with the predefined technology stack. And unit testing of those units is done to ensure the module is working properly.
+Integration and System testing - In this phase, all the modules are integrated incrementally after unit testing is done for that module. This includes 3 types of testing described as below- 
+A testing: In this developers test the system.
+B testing: In this, a set of customers conduct the testing.
+Acceptance testing: The client tests the software after delivery to check the fulfillment of the requirement set at the beginning.
+System Deployment - After all the functional and non-functional testing the software is deployed to the client's server and published in the market.
+System Maintenance - This is the phase post-go-live of a project. Any defects, new requirements, or version upgrades are taken care of in this phase.
+
+Advantages and Disadvantages using waterfall model - 
+Advantages: 
+1. This is a model easy to understand.
+2. The stages are clearly defined and have a well-understood milestone.
+3. The process works well for small projects.
+
+Disadvantages:
+1. Not flexible as this process follows fixed phases.
+2. No feedback mechanism may affect the quality of the software.
+3. Not cost-effective.
+
+My preference of model based on my experience-
+I prefer the agile methodology for the software development lifecycle. I have been working as a software developer for more than  5 years. I have worked on 4 different projects throughout this time. One of my projects followed the waterfall model and the other 3 followed the agile model for SDLC. When I was working on the waterfall model, I felt the good part of the project was we could maintain a proper work-life balance due to the long implementation phase. But there was a limited scope to interact with stakeholders or clients regarding progress and feedback on the path we were following. We did not get to review each other’s code while developing, so any defects or problems identified at later stages were a difficult task to handle. The requirement document had the whole project design included in it making it difficult to understand and implement in a phased manner. While, when I was working on the agile projects we were following the timeline more strictly since we had a shorter implementation time. We were clearer on the requirements as the requirements were broken down into tasks with well defined information. Sprint planning and retrospective helped us to improve our coding standards. Work was evenly distributed among the team members. The progress was tracked through Jira or Bitbucket software which were easy to use and gave us a good idea on the status and identifying the spring velocity. We could review each other's code at every stage that helped in smooth integration. I also experienced that any issues in the design could be detected at a very early stage in the agile model than in the waterfall model.
+
+
+
+Reference : https://www.scrumguides.org/scrum-guide.html, https://www.guru99.com/agile-vs-scrum.html#:~:text=Agile%20is%20a%20continuous%20iteration,the%20software%20after%20each%20sprint. , https://www.guru99.com/what-is-sdlc-or-waterfall-model.html, https://www.geeksforgeeks.org/software-engineering-classical-waterfall-model/, 	
